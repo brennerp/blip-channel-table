@@ -1,0 +1,48 @@
+.content-container,
+.channel-container {
+  width: 3.6 * $m;
+  height: 3.6 * $m;
+
+  img {
+    width: 3.6 * $m;
+    height: 3.6 * $m;
+  }
+}
+
+.channel-container {
+  .channel-title {
+    display: none;
+  }
+}
+
+.support-container {
+  width: 5 * $m;
+  height: 5 * $m;
+
+  img {
+    width: 4.8 * $m;
+    height: 2.4 * $m;
+  }
+
+  .content-title {
+    display: none;
+  }
+}
+
+.content-container,
+.support-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.send-img {
+  padding-left: 0.5 * $m;
+  margin-bottom: -0.2 * $m;
+}
+
+.receive-img {
+  padding-right: 0.5 * $m;
+}

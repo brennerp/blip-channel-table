@@ -1,0 +1,13 @@
+@mixin box-shadow($h-offset, $v-offset, $blur, $spread, $color) {
+  box-shadow: $h-offset $v-offset $blur $spread $color;
+  -o-box-shadow: $h-offset $v-offset $blur $spread $color;
+  -webkit-box-shadow: $h-offset $v-offset $blur $spread $color;
+  -moz-box-shadow: $h-offset $v-offset $blur $spread $color;
+}
+
+@mixin no-box-shadow() {
+  box-shadow: none;
+  -o-box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
