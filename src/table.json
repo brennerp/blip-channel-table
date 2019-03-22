@@ -1,69 +1,90 @@
 {
-  "contentTypes": {
-    "image": {
-      "name": "Image",
-      "description": "Description"
-    },
-    "quickReply": {
-      "name": "Quick Reply",
-      "description": "Description"
-    },
-    "menu": {
-      "name": "Menu",
-      "description": "Description"
-    }
-  },
-  "contentCapabilityPerChannel": {
-    "messenger": {
-      "name": "Messenger",
-      "support": {
-        "image": {
-          "send": true,
-          "receive": true
-        },
-        "menu": {
-          "send": false,
-          "receive": true
-        },
-        "quickReply": {
-          "send": false,
-          "receive": true
-        }
+    "contentTypes": {
+      "image": {
+        "name": "Image",
+        "description": "Description"
+      },
+      "quickReply": {
+        "name": "Quick Reply",
+        "description": "Description"
+      },
+      "menu": {
+        "name": "Menu",
+        "description": "Description"
       }
     },
-    "businessChat": {
-      "name": "Business Chat",
-      "support": {
-        "image": {
-          "send": true,
-          "receive": false
-        },
-        "menu": {
-          "send": false,
-          "receive": true
-        },
-        "quickReply": {
-          "send": false,
-          "receive": false
+    "contentCapabilityPerChannel": {
+      "messenger": {
+        "name": "Messenger",
+        "svg": "messenger",
+        "support": {
+          "image": {
+            "value": false,
+            "imgUrl": "test.png"
+          },
+          "menu": {
+            "value": true,
+            "imgUrl": "test.png"
+          },
+          "quickReply": {
+            "value": false,
+            "imgUrl": "test.png"
+          }
         }
-      }
-    },
-    "whatsApp": {
-      "name": "WhatsApp",
-      "support": {
-        "image": {
-          "send": false,
-          "receive": false
-        },
-        "menu": {
-          "send": false,
-          "receive": true
-        },
-        "quickReply": {
-          "send": true,
-          "receive": true
+      },
+      "businessChat": {
+        "name": "Business Chat",
+        "svg": "businessChat",
+        "support": {
+          "image": {
+            "value": true,
+            "imgUrl": "test.png"
+          },
+          "menu": {
+            "value": true,
+            "imgUrl": "test.png"
+          },
+          "quickReply": {
+            "value": false,
+            "imgUrl": "test.png"
+          }
+        }
+      },
+      "whatsApp": {
+        "name": "WhatsApp",
+        "svg": "whatsApp",
+        "support": {
+          "image": {
+            "value": true,
+            "imgUrl": "test.png"
+          },
+          "menu": {
+            "value": false,
+            "imgUrl": "test.png"
+          },
+          "quickReply": {
+            "value": true,
+            "imgUrl": "test.png"
+          }
+        }
+      },
+      "test": {
+        "name": "Test",
+        "svg": "businessChat",
+        "support": {
+          "image": {
+            "value": true,
+            "imgUrl": "test.png"
+          },
+          "menu": {
+            "value": false,
+            "imgUrl": "test.png"
+          },
+          "quickReply": {
+            "value": true,
+            "imgUrl": "test.png"
+          }
         }
       }
     }
   }
-}

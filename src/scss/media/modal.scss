@@ -1,0 +1,19 @@
+.modal-controller:checked ~ .modal {
+    @media only screen and (max-device-width: $bp-marge) {
+        .modal-dialog {
+            width: 60%;
+        }
+    }
+
+    @media only screen and (max-device-width: $bp-bart) {
+        .modal-dialog {
+            width: 75%;
+        }
+    }
+
+    @media only screen and (max-device-width: $bp-lisa) {
+        .modal-dialog {
+            width: 90%;
+        }
+    }
+}

@@ -1,6 +1,13 @@
 @import "table-header";
 @import "table-data";
 
+@mixin no-box-shadow() {
+  box-shadow: none;
+  -o-box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
 @media only screen and (max-width: $bp-bart) {
   table {
     padding: 0;
@@ -56,7 +63,7 @@
       flex-wrap: wrap;
       justify-content: center;
 
-      @include box-shadow(0, 2px, 12px, 0, #e1e7ee);
+      @include bp-shadow(0, 2px, 12px, 0, #e1e7ee);
       margin-bottom: 2 * $m;
 
       &:nth-child(even) {

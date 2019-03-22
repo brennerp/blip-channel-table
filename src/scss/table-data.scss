@@ -1,11 +1,12 @@
 table {
-  td {
-    .data-container {
-      display: block;
-
-      .content-image {
-        display: none;
+    th {
+      .channel-icon {
+        width: 4 * $m;
+        height: 4 * $m;
       }
     }
+
+    .channel-support__symbols {
+      text-align: center;
+    }
   }
-}
