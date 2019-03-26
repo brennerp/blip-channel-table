@@ -1,18 +1,27 @@
 {
-  "name": "parcel-sandbox",
+  "name": "svelte-app",
   "version": "1.0.0",
-  "description": "Simple Parcel Sandbox",
-  "main": "index.html",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "rollup": "^1.2.2",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^4.0.1",
+    "rollup-plugin-sass": "^1.1.0",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-svg": "^1.0.1",
+    "rollup-plugin-terser": "^4.0.4",
+    "sirv-cli": "^0.2.3",
+    "svelte": "^2.16.1"
+  },
   "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html --no-minify"
+    "build": "rollup -c",
+    "autobuild": "rollup -c -w",
+    "dev": "run-p start:dev autobuild",
+    "start": "sirv public",
+    "start:dev": "sirv public --dev"
   },
   "dependencies": {
-    "blip-toolkit": "^4.4.0"
-  },
-  "devDependencies": {
-    "@babel/core": "7.2.0",
-    "parcel-bundler": "^1.6.1",
-    "sass": "^1.17.3"
+    "blip-toolkit": "4.7.0"
   }
 }

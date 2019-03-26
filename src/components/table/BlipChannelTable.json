@@ -1,0 +1,108 @@
+{
+  "contentTypes": {
+    "image": {
+      "name": "Image",
+      "description": "Description"
+    },
+    "quickReply": {
+      "name": "Quick Reply",
+      "description": "Description"
+    },
+    "menu": {
+      "name": "Menu",
+      "description": "Description"
+    }
+  },
+  "contentCapabilityPerChannel": {
+    "messenger": {
+      "name": "Messenger",
+      "svg": "messenger",
+      "support": {
+        "image": {
+          "isSupported": false,
+          "imgUrl": "test.png"
+        },
+        "menu": {
+          "isSupported": true,
+          "imgUrl": "test.png"
+        },
+        "quickReply": {
+          "isSupported": false,
+          "imgUrl": "test.png"
+        }
+      }
+    },
+    "businessChat": {
+      "name": "Business Chat",
+      "svg": "businessChat",
+      "support": {
+        "image": {
+          "isSupported": true,
+          "imgUrl": "test.png"
+        },
+        "menu": {
+          "isSupported": true,
+          "imgUrl": "test.png"
+        },
+        "quickReply": {
+          "isSupported": false,
+          "imgUrl": "test.png"
+        }
+      }
+    },
+    "whatsApp": {
+      "name": "WhatsApp",
+      "svg": "whatsApp",
+      "support": {
+        "image": {
+          "isSupported": true,
+          "imgUrl": "test.png"
+        },
+        "menu": {
+          "isSupported": false,
+          "imgUrl": "test.png"
+        },
+        "quickReply": {
+          "isSupported": true,
+          "imgUrl": "test.png"
+        }
+      }
+    },
+    "test": {
+      "name": "Test",
+      "svg": "messenger",
+      "support": {
+        "image": {
+          "isSupported": true,
+          "imgUrl": "test.png"
+        },
+        "menu": {
+          "isSupported": false,
+          "imgUrl": "test.png"
+        },
+        "quickReply": {
+          "isSupported": true,
+          "imgUrl": "test.png"
+        }
+      }
+    },
+    "test2": {
+      "name": "Test2",
+      "svg": "messenger",
+      "support": {
+        "image": {
+          "isSupported": true,
+          "imgUrl": "test.png"
+        },
+        "menu": {
+          "isSupported": false,
+          "imgUrl": "test.png"
+        },
+        "quickReply": {
+          "isSupported": true,
+          "imgUrl": "test.png"
+        }
+      }
+    }
+  }
+}

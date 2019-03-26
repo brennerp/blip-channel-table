@@ -1,0 +1,27 @@
+<div id="blip-channel-table" class="responsive-table">
+    <ChannelSupportTable
+    channels={channels}
+    contentTypes={contentTypes}/>
+
+    <ContentTypeTable
+    contentTypes={contentTypes}/>
+</div>
+
+<script>
+import BlipChannelTableJson from './BlipChannelTable.json';
+import ChannelSupportTable from './ChannelSupportTable.html';
+import ContentTypeTable from './ContentTypeTable.html';
+
+export default {
+    data() {
+        return {
+            channels: BlipChannelTableJson.contentCapabilityPerChannel,
+            contentTypes: BlipChannelTableJson.contentTypes
+        };
+    },
+    components: {
+        ChannelSupportTable,
+        ContentTypeTable
+    }
+}
+</script>
