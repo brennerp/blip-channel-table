@@ -5,8 +5,8 @@
   "author": "Brenner Pacelli",
   "license": "ISC",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/npm/cli.git"
+    "type": "git",
+    "url": "https://github.com/npm/cli.git"
   },
   "scripts": {
     "build": "rollup -c",
@@ -16,7 +16,7 @@
     "start:dev": "sirv public --dev"
   },
   "dependencies": {
-    "blip-toolkit": "4.7.0"
+    "blip-toolkit": "^4.7.1"
   },
   "devDependencies": {
     "node-sass": "^4.11.0",
