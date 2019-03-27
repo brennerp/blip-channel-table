@@ -39,11 +39,8 @@ export default {
     methods: {
         updateModal({ channel, content }) {
             const { channels } = this.get();
-            console.log('got', channels);
             const channelObj = channels[channel];
-            console.log('content support', channelObj.support[content]);
             const modal = channelObj.support[content].modal;
-            console.log('modal', modal);
             this.setModal(modal);
         },
         setModal ({ title, description, img, docsUrl }) {

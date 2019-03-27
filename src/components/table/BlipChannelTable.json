@@ -19,7 +19,7 @@
       "svg": "messenger",
       "support": {
         "image": {
-          "isSupported": false,
+          "isSupported": true,
           "modal": {
             "title": "Test 1",
             "description": "Desc 1",
@@ -34,8 +34,8 @@
         "menu": {
           "isSupported": true,
           "modal": {
-            "title": "Test 1",
-            "description": "Desc 1",
+            "title": "Test 2",
+            "description": "Desc 2",
             "img": {
               "src": "test",
               "title": "test title",
@@ -45,10 +45,10 @@
           }
         },
         "quickReply": {
-          "isSupported": false,
+          "isSupported": true,
           "modal": {
-            "title": "Test 1",
-            "description": "Desc 1",
+            "title": "Test 3",
+            "description": "Desc 3",
             "img": {
               "src": "test",
               "title": "test title",
