@@ -1,70 +1,32 @@
-*Psst — looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+# BLiP's Channel Support Table
 
----
+This is a project made for building the page for BLiP's Channel Support.
 
-# svelte app
+It is built with Svelte + Rollup and constructs a responsive table based on a JSON file (BlipChannelTable.json).
 
-This is a project template for [Svelte](https://svelte.technology) apps. It lives at https://github.com/sveltejs/template.
+## Running the project
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
-
-```bash
-npm install -g degit # you only need to do this once
-
-degit sveltejs/template svelte-app
-cd svelte-app
-```
-
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
-
-
-## Get started
-
-Install the dependencies...
+To install the dependencies, run:
 
 ```bash
-cd svelte-app
+cd blip-channe-table
 npm install
 ```
 
-...then start [Rollup](https://rollupjs.org):
+To run the developer server, run:
 
 ```bash
 npm run dev
 ```
 
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+If error occur, try running with adming permissions or in PowerShell.
 
+## Understanding the table
 
-## Deploying to the web
+The table is built based on BlipChannelTable.json.
 
-### With [now](https://zeit.co/now)
+It has two main objects: contentTypes and contentCapabilityPerChannel (translated to 'channels' in code).
 
-Install `now` if you haven't already:
+The *contentTypes* object is responsible for telling all possible contentTypes, their names and any additional info. It is used to build the side table and to get information for the main table.
 
-```bash
-npm install -g now
-```
-
-Then, from within your project folder:
-
-```bash
-now
-```
-
-As an alternative, use the [Now desktop client](https://zeit.co/download) and simply drag the unzipped project folder to the taskbar icon.
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public
-```
+The *contentCapabilityPerChannel* (or *channels*) object is responsible for informing about each channel's info and their support to each of the content types. It is used to build the main table and get information for the channel-content example modal.
