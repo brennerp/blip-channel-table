@@ -20,15 +20,42 @@
       "support": {
         "image": {
           "isSupported": false,
-          "imgUrl": "test.png"
+          "modal": {
+            "title": "Test 1",
+            "description": "Desc 1",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
         },
         "menu": {
           "isSupported": true,
-          "imgUrl": "test.png"
+          "modal": {
+            "title": "Test 1",
+            "description": "Desc 1",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
         },
         "quickReply": {
           "isSupported": false,
-          "imgUrl": "test.png"
+          "modal": {
+            "title": "Test 1",
+            "description": "Desc 1",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
         }
       }
     },
@@ -38,15 +65,42 @@
       "support": {
         "image": {
           "isSupported": true,
-          "imgUrl": "test.png"
+          "modal": {
+            "title": "Test 1",
+            "description": "Desc 1",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
         },
         "menu": {
           "isSupported": true,
-          "imgUrl": "test.png"
+          "modal": {
+            "title": "Test 1",
+            "description": "Desc 1",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
         },
         "quickReply": {
           "isSupported": false,
-          "imgUrl": "test.png"
+          "modal": {
+            "title": "Test 1",
+            "description": "Desc 1",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
         }
       }
     },
@@ -56,15 +110,42 @@
       "support": {
         "image": {
           "isSupported": true,
-          "imgUrl": "test.png"
+          "modal": {
+            "title": "Test 1",
+            "description": "Desc 1",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
         },
         "menu": {
           "isSupported": false,
-          "imgUrl": "test.png"
+          "modal": {
+            "title": "Test 1",
+            "description": "Desc 1",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
         },
         "quickReply": {
           "isSupported": true,
-          "imgUrl": "test.png"
+          "modal": {
+            "title": "Test 1",
+            "description": "Desc 1",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
         }
       }
     },
@@ -74,15 +155,42 @@
       "support": {
         "image": {
           "isSupported": true,
-          "imgUrl": "test.png"
+          "modal": {
+            "title": "Test 1",
+            "description": "Desc 1",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
         },
         "menu": {
           "isSupported": false,
-          "imgUrl": "test.png"
+          "modal": {
+            "title": "Test 1",
+            "description": "Desc 1",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
         },
         "quickReply": {
           "isSupported": true,
-          "imgUrl": "test.png"
+          "modal": {
+            "title": "Test 1",
+            "description": "Desc 1",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
         }
       }
     },
@@ -92,15 +200,42 @@
       "support": {
         "image": {
           "isSupported": true,
-          "imgUrl": "test.png"
+          "modal": {
+            "title": "Test 1",
+            "description": "Desc 1",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
         },
         "menu": {
           "isSupported": false,
-          "imgUrl": "test.png"
+          "modal": {
+            "title": "Test 1",
+            "description": "Desc 1",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
         },
         "quickReply": {
           "isSupported": true,
-          "imgUrl": "test.png"
+          "modal": {
+            "title": "Test 1",
+            "description": "Desc 1",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
         }
       }
     }

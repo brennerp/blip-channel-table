@@ -11,7 +11,11 @@
             { #each Object.entries(contentTypes) as [contentKey, contentValue] }
             <tr>
                 { #each Object.entries(channels) as [channelKey, channelValue] }
-                <ChannelSupportDescription isSupported={channelValue.support[contentKey].isSupported} />
+                <ChannelSupportDescription
+                isSupported={channelValue.support[contentKey].isSupported}
+                channel={channelKey}
+                content={contentKey}
+                on:look/>
                 { /each }
             </tr>
             { /each }

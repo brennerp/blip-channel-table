@@ -1,0 +1,44 @@
+<div id="example-modal" class="modal-container">
+    <input class="modal-controller" id="example-modal-controller" type="checkbox" hidden>
+
+    <div class="modal" aria-hidden="true" role="dialog">
+        <label class="modal-overlay" for="example-modal-controller"></label>
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h1 class="modal-title"> {title} </h1>
+            </div>
+            <div class="modal-body">
+                <p class="modal-description">
+                    {description}
+                </p>
+                <img class="modal-image" src="{samples[img.src]}" alt="{img.alt}" title="{img.title}"/>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-buttons">
+                    <button class="documentation-button bp-btn bp-btn--text-only bp-btn--blip-dark">
+                        <a href="{docsUrl}">
+                            Ver documentação
+                        </a>
+                    </button>
+                    <button class="ok-button bp-btn bp-btn--text-only bp-btn--blip-dark">
+                        <label for="example-modal-controller">
+                            Entendi
+                        </label>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    import { sampleImages } from "../../../img/png/import.js";
+
+    export default {
+        data() {
+            return {
+                samples: { ...sampleImages }
+            };
+        }
+    }
+</script>

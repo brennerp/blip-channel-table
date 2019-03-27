@@ -1,8 +1,9 @@
 .responsive-table {
+  max-width: 100%;
   display: inline-flex;
   margin: 2*$m;
   flex-direction: row;
   flex-wrap: nowrap;
 
-  // @include bp-shadow(0, 2px, 12px, 0, #e1e7ee);
+  @include bp-shadow(0, 2px, 12px, 0, #e1e7ee);
 }

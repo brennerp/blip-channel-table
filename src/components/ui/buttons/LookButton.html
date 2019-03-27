@@ -1,8 +1,6 @@
-<button class="bp-btn bp-btn--text-only">
-    <label for="example-modal-controller" class="modal-trigger">
-        <LookSymbol/>
-    </label>
-</button>
+<label class="bp-btn bp-btn--text-only modal-trigger" for="example-modal-controller" on:click="fire('look', { channel, content })">
+    <LookSymbol/>
+</label>
 
 <script>
     import LookSymbol from "../symbols/LookSymbol.html";

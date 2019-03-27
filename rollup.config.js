@@ -5,6 +5,7 @@ import { terser } from 'rollup-plugin-terser';
 import sass from 'rollup-plugin-sass';
 import json from 'rollup-plugin-json';
 import svg from 'rollup-plugin-svg';
+import url from "rollup-plugin-url"
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -68,7 +69,11 @@ export default {
 				}
 			}
 		}),
-		svg(),
+		url({
+			limit: 10 * 1024, // inline files < 10k, copy files > 10k
+			include: ["**/*.png", "**/*.svg"], // defaults to .svg, .png, .jpg and .gif files
+			emitFiles: true // defaults to true
+		}),
 		// If you have external dependencies installed from
 		// npm, you'll most likely need these plugins. In
 		// some cases you'll need additional configuration —

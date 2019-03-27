@@ -5,7 +5,6 @@
 
 table {
   display: table;
-  height: 100%;
 
   background-color: $bp-color-white;
 
@@ -43,7 +42,7 @@ table {
 
   th,
   td {
-    font-size: 1.6 * $m;
+    font-size: $bp-fs-5;
     line-height: 100%;
   }
 }

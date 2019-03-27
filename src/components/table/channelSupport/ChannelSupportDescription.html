@@ -2,7 +2,7 @@
     <p class="channel-support__symbols {isSupported ? 'supported' : 'unsupported'}">
         {#if isSupported}
         <SupportedSymbol/>
-        <LookButton/>
+        <LookButton on:look {channel} {content}/>
         {:else}
         <UnsupportedSymbol/>
         {/if}
