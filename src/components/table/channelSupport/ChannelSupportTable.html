@@ -1,0 +1,42 @@
+<div class="main-table-container">
+    <table id="blip-channel-main-table" class="main-table">
+        <thead class="main-table__thead">
+            <tr>
+                { #each Object.entries(channels) as [channelKey, channelValue] }
+                <ChannelSupportHead channel={channelKey} svg={svgs[channelValue.svg]} title={channelValue.name} alt={channelValue.name} />
+                { /each }
+            </tr>
+        </thead>
+        <tbody class="main-table__tbody">
+            { #each Object.entries(contentTypes) as [contentKey, contentValue] }
+            <tr>
+                { #each Object.entries(channels) as [channelKey, channelValue] }
+                <ChannelSupportDescription
+                isSupported={channelValue.support[contentKey].isSupported}
+                channel={channelKey}
+                content={contentKey}
+                on:look/>
+                { /each }
+            </tr>
+            { /each }
+        </tbody>
+    </table>
+</div>
+
+<script>
+import ChannelSupportDescription from './ChannelSupportDescription.html';
+import ChannelSupportHead from './ChannelSupportHead.html';
+import { channelSvgs } from "../../../img/svg/import.js";
+
+export default {
+    data() {
+        return {
+            svgs: { ...channelSvgs }
+        };
+    },
+    components: {
+        ChannelSupportDescription,
+        ChannelSupportHead
+    }
+}
+</script>

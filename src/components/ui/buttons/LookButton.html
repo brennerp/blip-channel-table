@@ -1,0 +1,13 @@
+<label class="bp-btn bp-btn--text-only modal-trigger" for="example-modal-controller" on:click="fire('look', { channel, content })">
+    <LookSymbol/>
+</label>
+
+<script>
+    import LookSymbol from "../symbols/LookSymbol.html";
+
+    export default {
+        components: {
+            LookSymbol
+        }
+    }
+</script>

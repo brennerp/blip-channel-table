@@ -1,0 +1,5 @@
+.main-table-container {
+  flex-shrink: 1;
+  overflow-x: auto;
+  @include scrollbar($bp-color-breeze);
+}

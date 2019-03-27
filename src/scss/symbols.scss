@@ -1,0 +1,13 @@
+.symbol {
+  &.symbol--supported {
+    color: $bp-color-blip-dark;
+  }
+
+  &.symbol--unsupported {
+    color: $bp-color-city;
+  }
+
+  &.symbol--look {
+    color: $bp-color-rooftop;
+  }
+}

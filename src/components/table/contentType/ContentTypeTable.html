@@ -1,0 +1,22 @@
+<div class="side-table-container">
+    <table id="blip-channel-main-table" class="side-table">
+        <thead class="side-table__head">
+            <tr>
+                <th>
+                    Conteúdos
+                </th>
+            </tr>
+        </thead>
+        <tbody class="side-table__body">
+            { #each Object.entries(contentTypes) as [content, value] }
+            <tr>
+                <td>
+                    <p class="content-title">
+                        {value.name}
+                    </p>
+                </td>
+            </tr>
+            { /each }
+        </tbody>
+    </table>
+</div>

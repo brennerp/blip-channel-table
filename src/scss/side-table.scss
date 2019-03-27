@@ -1,0 +1,15 @@
+.side-table-container {
+  height: auto;
+  flex-shrink: 0;
+}
+
+.side-table {
+  height: 100%;
+  z-index: 2;
+  overflow-x: hidden;
+  border-right: 2px solid darken($bp-color-offwhite, 10%);
+
+  tbody tr:last-child {
+    height: 100%;
+  }
+}

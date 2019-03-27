@@ -1,20 +1,9 @@
-$m: 0.675rem;
-
-//Breakpoints
-//From https://codepen.io/pixelchar/pen/rfuqK
-$bp-maggie: 24 * $m;
-$bp-lisa: 48 * $m;
-$bp-bart: 76.8 * $m;
-$bp-marge: 90 * $m;
-$bp-homer: 120 * $m;
-
-html,
-body {
-  font-size: 100%;
-}
+$m: 0.625rem;
 
 body {
   font-family: Nunito, Heveltica, sans-serif;
+  width: 100%;
+  height: 100%;
 }
 
 * {
@@ -23,5 +12,10 @@ body {
   &:before,
   &:after {
     box-sizing: border-box;
+    clear: both;
   }
+}
+
+button label {
+  cursor: pointer;
 }

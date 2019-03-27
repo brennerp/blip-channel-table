@@ -1,0 +1,60 @@
+<ChannelSupportSampleModal title={modal.title} description={modal.description} img={modal.img} docsUrl={modal.docsUrl}/>
+<div id="blip-channel-table" class="responsive-table">
+    <ContentTypeTable
+    contentTypes={contentTypes}/>
+    <ChannelSupportTable
+    channels={channels}
+    contentTypes={contentTypes}
+    on:look="updateModal(event)"/>
+</div>
+
+<script>
+import BlipChannelTableJson from './BlipChannelTable.json';
+import ChannelSupportTable from './channelSupport/ChannelSupportTable.html';
+import ContentTypeTable from './contentType/ContentTypeTable.html';
+import ChannelSupportSampleModal from '../ui/modals/ChannelSupportSampleModal.html';
+
+export default {
+    data() {
+        return {
+            channels: BlipChannelTableJson.contentCapabilityPerChannel,
+            contentTypes: BlipChannelTableJson.contentTypes,
+            modal: {
+                title: 'Title',
+                description: 'Description',
+                img: {
+                    src: undefined,
+                    title: 'Img title',
+                    alt: 'Img alt'
+                },
+                docsUrl: undefined
+            }
+        };
+    },
+    components: {
+        ChannelSupportTable,
+        ContentTypeTable,
+        ChannelSupportSampleModal
+    },
+    methods: {
+        updateModal({ channel, content }) {
+            const { channels } = this.get();
+            const channelObj = channels[channel];
+            const modal = channelObj.support[content].modal;
+            this.setModal(modal);
+        },
+        setModal ({ title, description, img, docsUrl }) {
+            const newModal = {
+                title,
+                description,
+                img: { ...img },
+                docsUrl
+            };
+
+            this.set({
+                modal: newModal
+            })
+        }
+    }
+}
+</script>
