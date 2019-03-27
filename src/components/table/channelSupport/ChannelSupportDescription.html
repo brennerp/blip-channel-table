@@ -1,0 +1,24 @@
+<td class="channel-support">
+    <p class="channel-support__symbols {isSupported ? 'supported' : 'unsupported'}">
+        {#if isSupported}
+        <SupportedSymbol/>
+        <LookButton/>
+        {:else}
+        <UnsupportedSymbol/>
+        {/if}
+    </p>
+</td>
+
+<script>
+import LookButton from "../../ui/buttons/LookButton.html";
+import SupportedSymbol from "../../ui/symbols/SupportedSymbol.html";
+import UnsupportedSymbol from "../../ui/symbols/UnsupportedSymbol.html";
+
+export default {
+    components: {
+        LookButton,
+        SupportedSymbol,
+        UnsupportedSymbol
+    }
+}
+</script>

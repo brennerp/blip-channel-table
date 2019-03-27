@@ -3,13 +3,7 @@
         <thead class="main-table__thead">
             <tr>
                 { #each Object.entries(channels) as [channelKey, channelValue] }
-                <th id="{channelKey}-icon" class="channel-header">
-                    <img
-                    class="channel-icon"
-                    src="{svgs[channelValue.svg]}"
-                    title="{channelValue.name}"
-                    alt="{channelValue.name}"/>
-                </th>
+                <ChannelSupportHead channel={channelKey} svg={svgs[channelValue.svg]} title={channelValue.name} alt={channelValue.name} />
                 { /each }
             </tr>
         </thead>
@@ -17,11 +11,7 @@
             { #each Object.entries(contentTypes) as [contentKey, contentValue] }
             <tr>
                 { #each Object.entries(channels) as [channelKey, channelValue] }
-                <td class="channel-support">
-                    <p class="channel-support__symbols">
-                        <ChannelSupportDescription isSupported={channelValue.isSupported}/>
-                    </p>
-                </td>
+                <ChannelSupportDescription isSupported={channelValue.support[contentKey].isSupported} />
                 { /each }
             </tr>
             { /each }
@@ -31,7 +21,8 @@
 
 <script>
 import ChannelSupportDescription from './ChannelSupportDescription.html';
-import { channelSvgs } from "../../img/svg/import.js";
+import ChannelSupportHead from './ChannelSupportHead.html';
+import { channelSvgs } from "../../../img/svg/import.js";
 
 export default {
     data() {
@@ -40,7 +31,8 @@ export default {
         };
     },
     components: {
-        ChannelSupportDescription
+        ChannelSupportDescription,
+        ChannelSupportHead
     }
 }
 </script>
