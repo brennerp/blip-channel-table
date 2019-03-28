@@ -1,6 +1,6 @@
 # BLiP's Channel Support Table
 
-This is a project made for building the page for BLiP's Channel Support.
+This is a project made for building the page for [BLiP](https://blip.ai/)'s Channel Support.
 
 It is built with Svelte + Rollup and constructs a responsive table based on a JSON file (BlipChannelTable.json).
 

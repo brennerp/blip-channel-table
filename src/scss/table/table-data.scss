@@ -1,0 +1,13 @@
+table {
+  .channel-icon {
+    width: 4 * $m;
+    height: 4 * $m;
+  }
+
+  .channel-support__symbols {
+    text-align: center;
+    i, label {
+      vertical-align: middle;
+    }
+  }
+}

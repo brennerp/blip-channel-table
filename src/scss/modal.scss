@@ -48,6 +48,18 @@ $modal-z-index: 100;
         background-color: white;
 
         padding: 2*$m 1.8*$m;
+
+        @media only screen and (max-device-width: $bp-marge) {
+            width: 60%;
+        }
+
+        @media only screen and (max-device-width: $bp-bart) {
+            width: 75%;
+        }
+
+        @media only screen and (max-device-width: $bp-lisa) {
+            width: 90%;
+        }
     }
 
     .modal-closer,

@@ -1,15 +1,20 @@
 <ChannelSupportSampleModal title={modal.title} description={modal.description} img={modal.img} docsUrl={modal.docsUrl}/>
-<div id="blip-channel-table" class="responsive-table">
-    <ContentTypeTable
-    contentTypes={contentTypes}/>
-    <ChannelSupportTable
-    channels={channels}
-    contentTypes={contentTypes}
-    on:look="updateModal(event)"/>
+<div id="blip-channel-table-container">
+    <BlipChannelTableCaption/>
+    <div id="blip-channel-table" class="responsive-table">
+        <ContentTypeTable
+        contentTypes={contentTypes}/>
+        <ChannelSupportTable
+        channels={channels}
+        contentTypes={contentTypes}
+        on:look="updateModal(event)"/>
+    </div>
 </div>
+
 
 <script>
 import BlipChannelTableJson from './BlipChannelTable.json';
+import BlipChannelTableCaption from './BlipChannelTableCaption.html';
 import ChannelSupportTable from './channelSupport/ChannelSupportTable.html';
 import ContentTypeTable from './contentType/ContentTypeTable.html';
 import ChannelSupportSampleModal from '../ui/modals/ChannelSupportSampleModal.html';
@@ -32,6 +37,7 @@ export default {
         };
     },
     components: {
+        BlipChannelTableCaption,
         ChannelSupportTable,
         ContentTypeTable,
         ChannelSupportSampleModal

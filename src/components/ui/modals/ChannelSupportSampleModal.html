@@ -11,20 +11,18 @@
                 <p class="modal-description">
                     {description}
                 </p>
+                {#if img.src !== undefined }
                 <img class="modal-image" src="{samples[img.src]}" alt="{img.alt}" title="{img.title}"/>
+                {/if}
             </div>
             <div class="modal-footer">
                 <div class="modal-buttons">
-                    <button class="documentation-button bp-btn bp-btn--text-only bp-btn--blip-dark">
-                        <a href="{docsUrl}">
-                            Ver documentação
-                        </a>
-                    </button>
-                    <button class="ok-button bp-btn bp-btn--text-only bp-btn--blip-dark">
-                        <label for="example-modal-controller">
-                            Entendi
-                        </label>
-                    </button>
+                    <a class="documentation-button bp-btn bp-btn--text-only bp-btn--blip-dark" href="{docsUrl}">
+                        Ver documentação
+                    </a>
+                    <label role="button" class="ok-button bp-btn bp-btn--text-only bp-btn--blip-dark" for="example-modal-controller">
+                        Entendi
+                    </label>
                 </div>
             </div>
         </div>

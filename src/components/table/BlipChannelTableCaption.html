@@ -1,0 +1,34 @@
+<ul class="table-caption">
+    <li class="table-caption-item">
+        <SupportedSymbol/>
+        <span>
+            Supported
+        </span>
+    </li>
+    <li class="table-caption-item">
+        <LookSymbol/>
+        <span>
+            See example
+        </span>
+    </li>
+    <li class="table-caption-item">
+        <UnsupportedSymbol/>
+        <span>
+            Unsupported
+        </span>
+    </li>
+</ul>
+
+<script>
+import LookSymbol from '../ui/symbols/LookSymbol.html';
+import SupportedSymbol from '../ui/symbols/SupportedSymbol.html';
+import UnsupportedSymbol from '../ui/symbols/UnsupportedSymbol.html';
+
+export default {
+    components: {
+        UnsupportedSymbol,
+        SupportedSymbol,
+        LookSymbol
+    }
+}
+</script>

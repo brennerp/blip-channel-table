@@ -1,9 +1,11 @@
 .responsive-table {
   max-width: 100%;
   display: inline-flex;
-  margin: 2*$m;
   flex-direction: row;
   flex-wrap: nowrap;
+
+  color: $bp-color-city;
+  font-weight: $bp-fw-bold;
 
   @include bp-shadow(0, 2px, 12px, 0, #e1e7ee);
 }
