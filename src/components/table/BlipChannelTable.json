@@ -447,7 +447,7 @@
             "title": "Texto - Email",
             "description": "O texto simples é a forma mais prática e comum para se criar uma experiência conversacional.",
             "img": {
-              "src": "textBusinessChat",
+              "src": "textEmail",
               "title": "Conteúdo tipo texto do Email",
               "alt": "Conteúdo tipo texto"
             },
@@ -470,7 +470,17 @@
           "isSupported": false
         },
         "location": {
-          "isSupported": true
+          "isSupported": true,
+          "modal": {
+            "title": "Enviar localização - Email",
+            "description": "Envia uma mensagem com um mapa que aponta um determinada localização geográfica para o usuário.",
+            "img": {
+              "src": "sendLocationEmail",
+              "title": "Conteúdo tipo localização do Email",
+              "alt": "Conteúdo tipo localização"
+            },
+            "docsUrl": "https://docs.blip.ai/#send-location"
+          }
         },
         "requestLocation": {
           "isSupported": false
