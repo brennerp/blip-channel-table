@@ -91,17 +91,37 @@
   },
   "contentCapabilityPerChannel": {
     "appleBusinessChat": {
-      "name": "messenger-logo",
-      "svg": "messenger-logo",
+      "name": "Apple Business Chat",
+      "svg": "appleBusinessChat",
       "support": {
         "text": {
-          "isSupported": true
+          "isSupported": true,
+          "modal": {
+            "title": "Texto - Business Chat",
+            "description": "O texto simples é a forma mais prática e comum para se criar uma experiência conversacional.",
+            "img": {
+              "src": "textBusinessChat",
+              "title": "Conteúdo tipo texto do Business Chat",
+              "alt": "Conteúdo tipo texto"
+            },
+            "docsUrl": "https://docs.blip.ai/#plain-text"
+          }
         },
         "carousel": {
-          "isSupported": true
+          "isSupported": false
         },
         "chatState": {
-          "isSupported": false
+          "isSupported": true,
+          "modal": {
+            "title": "Digitando (Chat State) - Business Chat",
+            "description": "Mostra ao usuário que uma mensagem está sendo digitada, como acontece em conversas comuns nos aplicativos de mensageria. ",
+            "img": {
+              "src": "test",
+              "title": "Conteúdo tipo digitando do Business Chat",
+              "alt": "Conteúdo tipo digitando"
+            },
+            "docsUrl": "https://docs.blip.ai/#chat-state"
+          }
         },
         "collection": {
           "isSupported": false
@@ -119,10 +139,30 @@
           "isSupported": false
         },
         "audio": {
-          "isSupported": false
+          "isSupported": true,
+          "modal": {
+            "title": "Áudio - Business Chat",
+            "description": "Os arquivos podem ser enviados através da URL de um arquivo já existente.",
+            "img": {
+              "src": "mediaBusinessChat",
+              "title": "Conteúdo tipo áudio do Business Chat",
+              "alt": "Conteúdo tipo áudio"
+            },
+            "docsUrl": "https://docs.blip.ai/#audio"
+          }
         },
         "documents": {
-          "isSupported": false
+          "isSupported": true,
+          "modal": {
+            "title": "Documento - Business Chat",
+            "description": "Os arquivos podem ser enviados de através da URL de um arquivo já existente.",
+            "img": {
+              "src": "mediaBusinessChat",
+              "title": "Conteúdo de documentos do Business Chat",
+              "alt": "Conteúdo de documentos"
+            },
+            "docsUrl": "https://docs.blip.ai/#document-files"
+          }
         },
         "gif": {
           "isSupported": false
@@ -130,50 +170,50 @@
         "image": {
           "isSupported": true,
           "modal": {
-            "title": "Test 1",
-            "description": "Desc 1",
+            "title": "Imagem - Business Chat",
+            "description": "Os arquivos podem ser enviados de através da URL de um arquivo já existente.",
             "img": {
-              "src": "test",
-              "title": "test title",
-              "alt": "test alt"
+              "src": "mediaBusinessChat",
+              "title": "Conteúdo tipo imagem do Business Chat",
+              "alt": "Conteúdo tipo imagem"
             },
-            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+            "docsUrl": "https://docs.blip.ai/#images"
           }
         },
         "video": {
-          "isSupported": false
+          "isSupported": true,
+          "modal": {
+            "title": "Vídeo - Business Chat",
+            "description": "Os arquivos podem ser enviados de através da URL de um arquivo já existente.",
+            "img": {
+              "src": "mediaBusinessChat",
+              "title": "Conteúdo tipo vídeo do Business Chat",
+              "alt": "Conteúdo tipo vídeo"
+            },
+            "docsUrl": "https://docs.blip.ai/#video"
+          }
         },
         "menu": {
-          "isSupported": true,
-          "modal": {
-            "title": "Test 2",
-            "description": "Desc 2",
-            "img": {
-              "src": "test",
-              "title": "test title",
-              "alt": "test alt"
-            },
-            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
-          }
+          "isSupported": false
         },
         "quickReply": {
-          "isSupported": true,
-          "modal": {
-            "title": "Test 3",
-            "description": "Desc 3",
-            "img": {
-              "src": "test",
-              "title": "test title",
-              "alt": "test alt"
-            },
-            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
-          }
+          "isSupported": false
         },
         "native": {
           "isSupported": false
         },
         "paymentInvoice": {
-          "isSupported": false
+          "isSupported": true,
+          "modal": {
+            "title": "Requisição de pagamentos pelo Apple Pay - Business Chat",
+            "description": "Mostra ao usuário uma série de informações a respeito de uma compra e uma requisição para pagamentos através do Apple Pay.",
+            "img": {
+              "src": "paymentInvoiceBusinessChat",
+              "title": "Conteúdo de requisição de pagamentos do Business Chat",
+              "alt": "Conteúdo de requisição de pagamentos"
+            },
+            "docsUrl": "https://docs.blip.ai/#payment-invoice"
+          }
         },
         "paymentReceipt": {
           "isSupported": false
@@ -188,22 +228,62 @@
           "isSupported": false
         },
         "weblink": {
-          "isSupported": true
+          "isSupported": true,
+          "modal": {
+            "title": "Weblink - Business Chat",
+            "description": "Permite o envio de um link para uma página na web, permitindo que a mesma seja aberta diretamente no aplicativo Mensagens.",
+            "img": {
+              "src": "weblinkBusinessChat",
+              "title": "Conteúdo tipo weblink do Business Chat",
+              "alt": "Conteúdo tipo weblink"
+            },
+            "docsUrl": "https://docs.blip.ai/#web-link"
+          }
         }
       }
     },
     "blipChat": {
-      "name": "messenger-logo",
-      "svg": "messenger-logo",
+      "name": "BLiP Chat",
+      "svg": "blipChat",
       "support": {
         "text": {
-          "isSupported": true
+          "isSupported": true,
+          "modal": {
+            "title": "Texto - BLiP Chat",
+            "description": "O texto simples é a forma mais prática e comum para se criar uma experiência conversacional.",
+            "img": {
+              "src": "textBlipChat",
+              "title": "Tipo de conteúdo texto do BLiP Chat",
+              "alt": "Tipo de conteúdo texto"
+            },
+            "docsUrl": "https://docs.blip.ai/#plain-text"
+          }
         },
         "carousel": {
-          "isSupported": true
+          "isSupported": true,
+          "modal": {
+            "title": "Carrousel - BLiP Chat",
+            "description": "Envia uma mensagem do tipo carrousel para o usuário.",
+            "img": {
+              "src": "carouselBlipChat",
+              "title": "Tipo de conteúdo carrousel do BLiP Chat",
+              "alt": "Tipo de conteúdo carrousel"
+            },
+            "docsUrl": "https://docs.blip.ai/#carousel"
+          }
         },
         "chatState": {
-          "isSupported": false
+          "isSupported": true,
+          "modal": {
+            "title": "Digitando (Chat State) - BLiP Chat",
+            "description": "Mostra ao usuário que uma mensagem está sendo digitada, como acontece em conversas comuns nos aplicativos de mensageria. ",
+            "img": {
+              "src": "chatStateBlipChat",
+              "title": "Conteúdo tipo digitando do BLiP Chat",
+              "alt": "Conteúdo tipo digitando"
+            },
+            "docsUrl": "https://docs.blip.ai/#chat-state"
+          }
         },
         "collection": {
           "isSupported": false
@@ -215,16 +295,58 @@
           "isSupported": false
         },
         "location": {
-          "isSupported": false
+          "isSupported": true,
+          "modal": {
+            "title": "Enviar localização - BLiP Chat",
+            "description": "Envia uma mensagem com um mapa que aponta um determinada localização geográfica para o usuário.",
+            "img": {
+              "src": "sendLocationBlipChat",
+              "title": "Conteúdo tipo localização do BLiP Chat",
+              "alt": "Conteúdo tipo localização"
+            },
+            "docsUrl": "https://docs.blip.ai/#send-location"
+          }
+
         },
         "requestLocation": {
-          "isSupported": false
+          "isSupported": true,
+          "modal": {
+            "title": "Pedir localização - BLiP Chat",
+            "description": "Envia uma mensagem com um pedido de compartilhamento da localização do usuário.",
+            "img": {
+              "src": "requestLocationBlipChat",
+              "title": "Conteúdo tipo localização do BLiP Chat",
+              "alt": "Conteúdo tipo localização"
+            },
+            "docsUrl": "https://docs.blip.ai/#request-location"
+          }
+
         },
         "audio": {
-          "isSupported": false
+          "isSupported": true,
+          "modal": {
+            "title": "Áudio - BLiP Chat",
+            "description": "Envia uma mensagem com conteúdo do tipo áudio para o usuário.",
+            "img": {
+              "src": "audioBlipChat",
+              "title": "Conteúdo tipo áudio do BLiP Chat",
+              "alt": "Conteúdo tipo áudio"
+            },
+            "docsUrl": "https://docs.blip.ai/#audio"
+          }
         },
         "documents": {
-          "isSupported": false
+          "isSupported": true,
+          "modal": {
+            "title": "Documentos - BLiP Chat",
+            "description": "Envia uma mensagem com um conteúdo do tipo documento para o usuário — PDF, por exemplo.",
+            "img": {
+              "src": "documentBlipChat",
+              "title": "Conteúdo de documentos do BLiP Chat",
+              "alt": "Conteúdo de documentos"
+            },
+            "docsUrl": "https://docs.blip.ai/#document-files"
+          }
         },
         "gif": {
           "isSupported": false
@@ -232,43 +354,54 @@
         "image": {
           "isSupported": true,
           "modal": {
-            "title": "Test 1",
-            "description": "Desc 1",
+            "title": "Imagem - BLiP Chat",
+            "description": "Envia uma mensagem de imagem para o usuário.",
             "img": {
-              "src": "test",
-              "title": "test title",
-              "alt": "test alt"
+              "src": "imageBlipChat",
+              "title": "Conteúdo tipo imagem do BLiP Chat",
+              "alt": "Conteúdo tipo imagem"
             },
-            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+            "docsUrl": "https://docs.blip.ai/#images"
           }
+        
         },
         "video": {
-          "isSupported": false
+          "isSupported": true,
+          "modal": {
+            "title": "Vídeo - BLiP Chat",
+            "description": "Envia uma mensagem com conteúdo do tipo vídeo para o usuário.",
+            "img": {
+              "src": "videoBlipChat",
+              "title": "Conteúdo tipo vídeo do BLiP Chat",
+              "alt": "Conteúdo tipo vídeo"
+            },
+            "docsUrl": "https://docs.blip.ai/#video"
+          }
         },
         "menu": {
           "isSupported": true,
           "modal": {
-            "title": "Test 2",
-            "description": "Desc 2",
+            "title": "Menu - BLiP Chat",
+            "description": "Envia uma mensagem com conteúdo do tipo menu para o usuário.",
             "img": {
-              "src": "test",
-              "title": "test title",
-              "alt": "test alt"
+              "src": "menuBlipChat",
+              "title": "Conteúdo tipo menu do BLiP Chat",
+              "alt": "Conteúdo tipo menu"
             },
-            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+            "docsUrl": "https://docs.blip.ai/#menu"
           }
         },
         "quickReply": {
           "isSupported": true,
           "modal": {
-            "title": "Test 3",
-            "description": "Desc 3",
+            "title": "Quick Reply - BLiP Chat",
+            "description": "Envia uma mensagem do tipo quick reply (respostas de escopo imediato) para o usuário.",
             "img": {
-              "src": "test",
-              "title": "test title",
-              "alt": "test alt"
+              "src": "quickReplyBlipChat",
+              "title": "Conteúdo tipo quick reply do BLiP Chat",
+              "alt": "Conteúdo tipo quick reply"
             },
-            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+            "docsUrl": "https://docs.blip.ai/#quick-replies"
           }
         },
         "native": {
@@ -290,19 +423,39 @@
           "isSupported": false
         },
         "weblink": {
-          "isSupported": true
+          "isSupported": true,
+          "modal": {
+            "title": "Weblink - BLiP Chat",
+            "description": "Permite o envio de um link para uma página na web, permitindo que a mesma seja aberta diretamente na aplicação.",
+            "img": {
+              "src": "weblinkBlipChat",
+              "title": "Conteúdo tipo weblink do BLiP Chat",
+              "alt": "Conteúdo tipo weblink"
+            },
+            "docsUrl": "https://docs.blip.ai/#web-link"
+          }
         }
       }
     },
     "email": {
-      "name": "messenger-logo",
-      "svg": "messenger-logo",
+      "name": "Email",
+      "svg": "email",
       "support": {
         "text": {
-          "isSupported": true
+          "isSupported": true,
+          "modal": {
+            "title": "Texto - Email",
+            "description": "O texto simples é a forma mais prática e comum para se criar uma experiência conversacional.",
+            "img": {
+              "src": "textBusinessChat",
+              "title": "Conteúdo tipo texto do Email",
+              "alt": "Conteúdo tipo texto"
+            },
+            "docsUrl": "https://docs.blip.ai/#plain-text"
+          }
         },
         "carousel": {
-          "isSupported": true
+          "isSupported": false
         },
         "chatState": {
           "isSupported": false
@@ -317,19 +470,19 @@
           "isSupported": false
         },
         "location": {
-          "isSupported": false
+          "isSupported": true
         },
         "requestLocation": {
           "isSupported": false
         },
         "audio": {
-          "isSupported": false
+          "isSupported": true
         },
         "documents": {
-          "isSupported": false
+          "isSupported": true
         },
         "gif": {
-          "isSupported": false
+          "isSupported": true
         },
         "image": {
           "isSupported": true,
@@ -345,7 +498,7 @@
           }
         },
         "video": {
-          "isSupported": false
+          "isSupported": true
         },
         "menu": {
           "isSupported": true,
@@ -361,7 +514,7 @@
           }
         },
         "quickReply": {
-          "isSupported": true,
+          "isSupported": false,
           "modal": {
             "title": "Test 3",
             "description": "Desc 3",
@@ -397,8 +550,8 @@
       }
     },
     "googleAssistant": {
-      "name": "messenger-logo",
-      "svg": "messenger-logo",
+      "name": "Google Assistant",
+      "svg": "googleAssistant",
       "support": {
         "text": {
           "isSupported": true
@@ -416,16 +569,16 @@
           "isSupported": false
         },
         "list": {
-          "isSupported": false
+          "isSupported": true
         },
         "location": {
           "isSupported": false
         },
         "requestLocation": {
-          "isSupported": false
+          "isSupported": true
         },
         "audio": {
-          "isSupported": false
+          "isSupported": true
         },
         "documents": {
           "isSupported": false
@@ -450,7 +603,7 @@
           "isSupported": false
         },
         "menu": {
-          "isSupported": true,
+          "isSupported": false,
           "modal": {
             "title": "Test 2",
             "description": "Desc 2",
@@ -499,8 +652,8 @@
       }
     },
     "googleRcs": {
-      "name": "messenger-logo",
-      "svg": "messenger-logo",
+      "name": "Google RCS",
+      "svg": "googleRcs",
       "support": {
         "text": {
           "isSupported": true
@@ -524,13 +677,13 @@
           "isSupported": false
         },
         "requestLocation": {
-          "isSupported": false
+          "isSupported": true
         },
         "audio": {
-          "isSupported": false
+          "isSupported": true
         },
         "documents": {
-          "isSupported": false
+          "isSupported": true
         },
         "gif": {
           "isSupported": false
@@ -549,7 +702,7 @@
           }
         },
         "video": {
-          "isSupported": false
+          "isSupported": true
         },
         "menu": {
           "isSupported": true,
@@ -596,19 +749,19 @@
           "isSupported": false
         },
         "weblink": {
-          "isSupported": true
+          "isSupported": false
         }
       }
     },
     "infoBip": {
-      "name": "messenger-logo",
-      "svg": "messenger-logo",
+      "name": "Infobip",
+      "svg": "infoBip",
       "support": {
         "text": {
           "isSupported": true
         },
         "carousel": {
-          "isSupported": true
+          "isSupported": false
         },
         "chatState": {
           "isSupported": false
@@ -629,13 +782,13 @@
           "isSupported": false
         },
         "audio": {
-          "isSupported": false
+          "isSupported": true
         },
         "documents": {
-          "isSupported": false
+          "isSupported": true
         },
         "gif": {
-          "isSupported": false
+          "isSupported": true
         },
         "image": {
           "isSupported": true,
@@ -651,10 +804,10 @@
           }
         },
         "video": {
-          "isSupported": false
+          "isSupported": true
         },
         "menu": {
-          "isSupported": true,
+          "isSupported": false,
           "modal": {
             "title": "Test 2",
             "description": "Desc 2",
@@ -667,7 +820,7 @@
           }
         },
         "quickReply": {
-          "isSupported": true,
+          "isSupported": false,
           "modal": {
             "title": "Test 3",
             "description": "Desc 3",
@@ -698,13 +851,13 @@
           "isSupported": false
         },
         "weblink": {
-          "isSupported": true
+          "isSupported": false
         }
       }
     },
     "messenger": {
-      "name": "messenger-logo",
-      "svg": "messenger-logo",
+      "name": "Messenger",
+      "svg": "messenger",
       "support": {
         "text": {
           "isSupported": true
@@ -713,7 +866,7 @@
           "isSupported": true
         },
         "chatState": {
-          "isSupported": false
+          "isSupported": true
         },
         "collection": {
           "isSupported": false
@@ -731,10 +884,10 @@
           "isSupported": false
         },
         "audio": {
-          "isSupported": false
+          "isSupported": true
         },
         "documents": {
-          "isSupported": false
+          "isSupported": true
         },
         "gif": {
           "isSupported": false
@@ -753,7 +906,7 @@
           }
         },
         "video": {
-          "isSupported": false
+          "isSupported": true
         },
         "menu": {
           "isSupported": true,
@@ -805,14 +958,14 @@
       }
     },
     "skype": {
-      "name": "messenger-logo",
-      "svg": "messenger-logo",
+      "name": "Skype",
+      "svg": "skype",
       "support": {
         "text": {
           "isSupported": true
         },
         "carousel": {
-          "isSupported": true
+          "isSupported": false
         },
         "chatState": {
           "isSupported": false
@@ -827,16 +980,16 @@
           "isSupported": false
         },
         "location": {
-          "isSupported": false
+          "isSupported": true
         },
         "requestLocation": {
           "isSupported": false
         },
         "audio": {
-          "isSupported": false
+          "isSupported": true
         },
         "documents": {
-          "isSupported": false
+          "isSupported": true
         },
         "gif": {
           "isSupported": false
@@ -855,7 +1008,7 @@
           }
         },
         "video": {
-          "isSupported": false
+          "isSupported": true
         },
         "menu": {
           "isSupported": true,
@@ -871,7 +1024,7 @@
           }
         },
         "quickReply": {
-          "isSupported": true,
+          "isSupported": false,
           "modal": {
             "title": "Test 3",
             "description": "Desc 3",
@@ -907,17 +1060,17 @@
       }
     },
     "telegram ": {
-      "name": "messenger-logo",
-      "svg": "messenger-logo",
+      "name": "Telegram",
+      "svg": "telegram",
       "support": {
         "text": {
           "isSupported": true
         },
         "carousel": {
-          "isSupported": true
+          "isSupported": false
         },
         "chatState": {
-          "isSupported": false
+          "isSupported": true
         },
         "collection": {
           "isSupported": false
@@ -929,19 +1082,19 @@
           "isSupported": false
         },
         "location": {
-          "isSupported": false
+          "isSupported": true
         },
         "requestLocation": {
           "isSupported": false
         },
         "audio": {
-          "isSupported": false
+          "isSupported": true
         },
         "documents": {
-          "isSupported": false
+          "isSupported": true
         },
         "gif": {
-          "isSupported": false
+          "isSupported": true
         },
         "image": {
           "isSupported": true,
@@ -957,7 +1110,7 @@
           }
         },
         "video": {
-          "isSupported": false
+          "isSupported": true
         },
         "menu": {
           "isSupported": true,
@@ -1009,8 +1162,8 @@
       }
     },
     "whatsApp": {
-      "name": "businessChat",
-      "svg": "businessChat",
+      "name": "WhatsApp",
+      "svg": "whatsApp",
       "support": {
         "text": {
           "isSupported": true
@@ -1111,8 +1264,8 @@
       }
     },
     "workplace ": {
-      "name": "Messenger",
-      "svg": "messenger",
+      "name": "Workplace",
+      "svg": "workplace",
       "support": {
         "text": {
           "isSupported": true
@@ -1121,7 +1274,7 @@
           "isSupported": true
         },
         "chatState": {
-          "isSupported": false
+          "isSupported": true
         },
         "collection": {
           "isSupported": false
@@ -1139,10 +1292,10 @@
           "isSupported": false
         },
         "audio": {
-          "isSupported": false
+          "isSupported": true
         },
         "documents": {
-          "isSupported": false
+          "isSupported": true
         },
         "gif": {
           "isSupported": false
@@ -1161,7 +1314,7 @@
           }
         },
         "video": {
-          "isSupported": false
+          "isSupported": true
         },
         "menu": {
           "isSupported": true,
