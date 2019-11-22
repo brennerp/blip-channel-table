@@ -90,15 +90,15 @@
     }
   },
   "contentCapabilityPerChannel": {
-    "messenger": {
-      "name": "Messenger",
-      "svg": "messenger",
+    "appleBusinessChat": {
+      "name": "messenger-logo",
+      "svg": "messenger-logo",
       "support": {
         "text": {
-          "isSupported": false
+          "isSupported": true
         },
         "carousel": {
-          "isSupported": false
+          "isSupported": true
         },
         "chatState": {
           "isSupported": false
@@ -188,9 +188,1030 @@
           "isSupported": false
         },
         "weblink": {
+          "isSupported": true
+        }
+      }
+    },
+    "blipChat": {
+      "name": "messenger-logo",
+      "svg": "messenger-logo",
+      "support": {
+        "text": {
+          "isSupported": true
+        },
+        "carousel": {
+          "isSupported": true
+        },
+        "chatState": {
           "isSupported": false
+        },
+        "collection": {
+          "isSupported": false
+        },
+        "input": {
+          "isSupported": false
+        },
+        "list": {
+          "isSupported": false
+        },
+        "location": {
+          "isSupported": false
+        },
+        "requestLocation": {
+          "isSupported": false
+        },
+        "audio": {
+          "isSupported": false
+        },
+        "documents": {
+          "isSupported": false
+        },
+        "gif": {
+          "isSupported": false
+        },
+        "image": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 1",
+            "description": "Desc 1",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "video": {
+          "isSupported": false
+        },
+        "menu": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 2",
+            "description": "Desc 2",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "quickReply": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 3",
+            "description": "Desc 3",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "native": {
+          "isSupported": false
+        },
+        "paymentInvoice": {
+          "isSupported": false
+        },
+        "paymentReceipt": {
+          "isSupported": false
+        },
+        "redirect": {
+          "isSupported": false
+        },
+        "resource": {
+          "isSupported": false
+        },
+        "sensitive": {
+          "isSupported": false
+        },
+        "weblink": {
+          "isSupported": true
+        }
+      }
+    },
+    "email": {
+      "name": "messenger-logo",
+      "svg": "messenger-logo",
+      "support": {
+        "text": {
+          "isSupported": true
+        },
+        "carousel": {
+          "isSupported": true
+        },
+        "chatState": {
+          "isSupported": false
+        },
+        "collection": {
+          "isSupported": false
+        },
+        "input": {
+          "isSupported": false
+        },
+        "list": {
+          "isSupported": false
+        },
+        "location": {
+          "isSupported": false
+        },
+        "requestLocation": {
+          "isSupported": false
+        },
+        "audio": {
+          "isSupported": false
+        },
+        "documents": {
+          "isSupported": false
+        },
+        "gif": {
+          "isSupported": false
+        },
+        "image": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 1",
+            "description": "Desc 1",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "video": {
+          "isSupported": false
+        },
+        "menu": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 2",
+            "description": "Desc 2",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "quickReply": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 3",
+            "description": "Desc 3",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "native": {
+          "isSupported": false
+        },
+        "paymentInvoice": {
+          "isSupported": false
+        },
+        "paymentReceipt": {
+          "isSupported": false
+        },
+        "redirect": {
+          "isSupported": false
+        },
+        "resource": {
+          "isSupported": false
+        },
+        "sensitive": {
+          "isSupported": false
+        },
+        "weblink": {
+          "isSupported": true
+        }
+      }
+    },
+    "googleAssistant": {
+      "name": "messenger-logo",
+      "svg": "messenger-logo",
+      "support": {
+        "text": {
+          "isSupported": true
+        },
+        "carousel": {
+          "isSupported": true
+        },
+        "chatState": {
+          "isSupported": false
+        },
+        "collection": {
+          "isSupported": false
+        },
+        "input": {
+          "isSupported": false
+        },
+        "list": {
+          "isSupported": false
+        },
+        "location": {
+          "isSupported": false
+        },
+        "requestLocation": {
+          "isSupported": false
+        },
+        "audio": {
+          "isSupported": false
+        },
+        "documents": {
+          "isSupported": false
+        },
+        "gif": {
+          "isSupported": false
+        },
+        "image": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 1",
+            "description": "Desc 1",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "video": {
+          "isSupported": false
+        },
+        "menu": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 2",
+            "description": "Desc 2",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "quickReply": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 3",
+            "description": "Desc 3",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "native": {
+          "isSupported": false
+        },
+        "paymentInvoice": {
+          "isSupported": false
+        },
+        "paymentReceipt": {
+          "isSupported": false
+        },
+        "redirect": {
+          "isSupported": false
+        },
+        "resource": {
+          "isSupported": false
+        },
+        "sensitive": {
+          "isSupported": false
+        },
+        "weblink": {
+          "isSupported": true
+        }
+      }
+    },
+    "googleRcs": {
+      "name": "messenger-logo",
+      "svg": "messenger-logo",
+      "support": {
+        "text": {
+          "isSupported": true
+        },
+        "carousel": {
+          "isSupported": true
+        },
+        "chatState": {
+          "isSupported": false
+        },
+        "collection": {
+          "isSupported": false
+        },
+        "input": {
+          "isSupported": false
+        },
+        "list": {
+          "isSupported": false
+        },
+        "location": {
+          "isSupported": false
+        },
+        "requestLocation": {
+          "isSupported": false
+        },
+        "audio": {
+          "isSupported": false
+        },
+        "documents": {
+          "isSupported": false
+        },
+        "gif": {
+          "isSupported": false
+        },
+        "image": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 1",
+            "description": "Desc 1",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "video": {
+          "isSupported": false
+        },
+        "menu": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 2",
+            "description": "Desc 2",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "quickReply": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 3",
+            "description": "Desc 3",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "native": {
+          "isSupported": false
+        },
+        "paymentInvoice": {
+          "isSupported": false
+        },
+        "paymentReceipt": {
+          "isSupported": false
+        },
+        "redirect": {
+          "isSupported": false
+        },
+        "resource": {
+          "isSupported": false
+        },
+        "sensitive": {
+          "isSupported": false
+        },
+        "weblink": {
+          "isSupported": true
+        }
+      }
+    },
+    "infoBip": {
+      "name": "messenger-logo",
+      "svg": "messenger-logo",
+      "support": {
+        "text": {
+          "isSupported": true
+        },
+        "carousel": {
+          "isSupported": true
+        },
+        "chatState": {
+          "isSupported": false
+        },
+        "collection": {
+          "isSupported": false
+        },
+        "input": {
+          "isSupported": false
+        },
+        "list": {
+          "isSupported": false
+        },
+        "location": {
+          "isSupported": false
+        },
+        "requestLocation": {
+          "isSupported": false
+        },
+        "audio": {
+          "isSupported": false
+        },
+        "documents": {
+          "isSupported": false
+        },
+        "gif": {
+          "isSupported": false
+        },
+        "image": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 1",
+            "description": "Desc 1",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "video": {
+          "isSupported": false
+        },
+        "menu": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 2",
+            "description": "Desc 2",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "quickReply": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 3",
+            "description": "Desc 3",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "native": {
+          "isSupported": false
+        },
+        "paymentInvoice": {
+          "isSupported": false
+        },
+        "paymentReceipt": {
+          "isSupported": false
+        },
+        "redirect": {
+          "isSupported": false
+        },
+        "resource": {
+          "isSupported": false
+        },
+        "sensitive": {
+          "isSupported": false
+        },
+        "weblink": {
+          "isSupported": true
+        }
+      }
+    },
+    "messenger": {
+      "name": "messenger-logo",
+      "svg": "messenger-logo",
+      "support": {
+        "text": {
+          "isSupported": true
+        },
+        "carousel": {
+          "isSupported": true
+        },
+        "chatState": {
+          "isSupported": false
+        },
+        "collection": {
+          "isSupported": false
+        },
+        "input": {
+          "isSupported": false
+        },
+        "list": {
+          "isSupported": false
+        },
+        "location": {
+          "isSupported": false
+        },
+        "requestLocation": {
+          "isSupported": false
+        },
+        "audio": {
+          "isSupported": false
+        },
+        "documents": {
+          "isSupported": false
+        },
+        "gif": {
+          "isSupported": false
+        },
+        "image": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 1",
+            "description": "Desc 1",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "video": {
+          "isSupported": false
+        },
+        "menu": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 2",
+            "description": "Desc 2",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "quickReply": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 3",
+            "description": "Desc 3",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "native": {
+          "isSupported": false
+        },
+        "paymentInvoice": {
+          "isSupported": false
+        },
+        "paymentReceipt": {
+          "isSupported": false
+        },
+        "redirect": {
+          "isSupported": false
+        },
+        "resource": {
+          "isSupported": false
+        },
+        "sensitive": {
+          "isSupported": false
+        },
+        "weblink": {
+          "isSupported": true
+        }
+      }
+    },
+    "skype": {
+      "name": "messenger-logo",
+      "svg": "messenger-logo",
+      "support": {
+        "text": {
+          "isSupported": true
+        },
+        "carousel": {
+          "isSupported": true
+        },
+        "chatState": {
+          "isSupported": false
+        },
+        "collection": {
+          "isSupported": false
+        },
+        "input": {
+          "isSupported": false
+        },
+        "list": {
+          "isSupported": false
+        },
+        "location": {
+          "isSupported": false
+        },
+        "requestLocation": {
+          "isSupported": false
+        },
+        "audio": {
+          "isSupported": false
+        },
+        "documents": {
+          "isSupported": false
+        },
+        "gif": {
+          "isSupported": false
+        },
+        "image": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 1",
+            "description": "Desc 1",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "video": {
+          "isSupported": false
+        },
+        "menu": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 2",
+            "description": "Desc 2",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "quickReply": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 3",
+            "description": "Desc 3",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "native": {
+          "isSupported": false
+        },
+        "paymentInvoice": {
+          "isSupported": false
+        },
+        "paymentReceipt": {
+          "isSupported": false
+        },
+        "redirect": {
+          "isSupported": false
+        },
+        "resource": {
+          "isSupported": false
+        },
+        "sensitive": {
+          "isSupported": false
+        },
+        "weblink": {
+          "isSupported": true
+        }
+      }
+    },
+    "telegram ": {
+      "name": "messenger-logo",
+      "svg": "messenger-logo",
+      "support": {
+        "text": {
+          "isSupported": true
+        },
+        "carousel": {
+          "isSupported": true
+        },
+        "chatState": {
+          "isSupported": false
+        },
+        "collection": {
+          "isSupported": false
+        },
+        "input": {
+          "isSupported": false
+        },
+        "list": {
+          "isSupported": false
+        },
+        "location": {
+          "isSupported": false
+        },
+        "requestLocation": {
+          "isSupported": false
+        },
+        "audio": {
+          "isSupported": false
+        },
+        "documents": {
+          "isSupported": false
+        },
+        "gif": {
+          "isSupported": false
+        },
+        "image": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 1",
+            "description": "Desc 1",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "video": {
+          "isSupported": false
+        },
+        "menu": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 2",
+            "description": "Desc 2",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "quickReply": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 3",
+            "description": "Desc 3",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "native": {
+          "isSupported": false
+        },
+        "paymentInvoice": {
+          "isSupported": false
+        },
+        "paymentReceipt": {
+          "isSupported": false
+        },
+        "redirect": {
+          "isSupported": false
+        },
+        "resource": {
+          "isSupported": false
+        },
+        "sensitive": {
+          "isSupported": false
+        },
+        "weblink": {
+          "isSupported": true
+        }
+      }
+    },
+    "whatsApp": {
+      "name": "businessChat",
+      "svg": "businessChat",
+      "support": {
+        "text": {
+          "isSupported": true
+        },
+        "carousel": {
+          "isSupported": true
+        },
+        "chatState": {
+          "isSupported": false
+        },
+        "collection": {
+          "isSupported": false
+        },
+        "input": {
+          "isSupported": false
+        },
+        "list": {
+          "isSupported": false
+        },
+        "location": {
+          "isSupported": false
+        },
+        "requestLocation": {
+          "isSupported": false
+        },
+        "audio": {
+          "isSupported": false
+        },
+        "documents": {
+          "isSupported": false
+        },
+        "gif": {
+          "isSupported": false
+        },
+        "image": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 1",
+            "description": "Desc 1",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "video": {
+          "isSupported": false
+        },
+        "menu": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 2",
+            "description": "Desc 2",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "quickReply": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 3",
+            "description": "Desc 3",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "native": {
+          "isSupported": false
+        },
+        "paymentInvoice": {
+          "isSupported": false
+        },
+        "paymentReceipt": {
+          "isSupported": false
+        },
+        "redirect": {
+          "isSupported": false
+        },
+        "resource": {
+          "isSupported": false
+        },
+        "sensitive": {
+          "isSupported": false
+        },
+        "weblink": {
+          "isSupported": true
+        }
+      }
+    },
+    "workplace ": {
+      "name": "Messenger",
+      "svg": "messenger",
+      "support": {
+        "text": {
+          "isSupported": true
+        },
+        "carousel": {
+          "isSupported": true
+        },
+        "chatState": {
+          "isSupported": false
+        },
+        "collection": {
+          "isSupported": false
+        },
+        "input": {
+          "isSupported": false
+        },
+        "list": {
+          "isSupported": false
+        },
+        "location": {
+          "isSupported": false
+        },
+        "requestLocation": {
+          "isSupported": false
+        },
+        "audio": {
+          "isSupported": false
+        },
+        "documents": {
+          "isSupported": false
+        },
+        "gif": {
+          "isSupported": false
+        },
+        "image": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 1",
+            "description": "Desc 1",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "video": {
+          "isSupported": false
+        },
+        "menu": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 2",
+            "description": "Desc 2",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "quickReply": {
+          "isSupported": true,
+          "modal": {
+            "title": "Test 3",
+            "description": "Desc 3",
+            "img": {
+              "src": "test",
+              "title": "test title",
+              "alt": "test alt"
+            },
+            "docsUrl": "https://docs.blip.ai/#multimedia-menu"
+          }
+        },
+        "native": {
+          "isSupported": false
+        },
+        "paymentInvoice": {
+          "isSupported": false
+        },
+        "paymentReceipt": {
+          "isSupported": false
+        },
+        "redirect": {
+          "isSupported": false
+        },
+        "resource": {
+          "isSupported": false
+        },
+        "sensitive": {
+          "isSupported": false
+        },
+        "weblink": {
+          "isSupported": true
         }
       }
     }
+    
   }
 }
